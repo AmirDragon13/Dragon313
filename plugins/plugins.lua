@@ -25,18 +25,18 @@ local function list_all_plugins(only_enabled)
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
-    --  ☑️ enabled, 🔘 disabled
-    local status = '🔘'
+    --  ✅ enabled, ⛔️ disabled
+    local status = '⛔️'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '☑️' 
+        status = '✅' 
       end
       nact = nact+1
     end
-    if not only_enabled or status == 'âœ”' then
+    if not only_enabled or status == '✅' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
       text = text..nsum..'. '..v..'  '..status..'\n'
@@ -50,18 +50,18 @@ local function list_plugins(only_enabled)
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
-    --  ☑️ enabled, 🔘 disabled
-    local status = '🔘'
+    --  ✅ enabled, ⛔️ disabled
+    local status = '⛔️'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '☑️' 
+        status = '✅' 
       end
       nact = nact+1
     end
-    if not only_enabled or status == '☑️' then
+    if not only_enabled or status == '✅' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
       text = text..v..'  '..status..'\n'
@@ -189,7 +189,7 @@ local function run(msg, matches)
   end
 
   -- Reload all the plugins!
-  if matches[1] == 'reload' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1] == '?' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return reload_plugins(true)
   end
 end
@@ -205,7 +205,7 @@ return {
           "!plugins : list all plugins.",
           "!plugins + [plugin] : enable plugin.",
           "!plugins - [plugin] : disable plugin.",
-          "!plugins reload : reloads all plugins." },
+          "!plugins ? : reloads all plugins." },
           },
   patterns = {
     "^!plugins$",
@@ -213,7 +213,7 @@ return {
     "^!plugins? (-) ([%w_%.%-]+)$",
     "^!plugins? (+) ([%w_%.%-]+) (chat)",
     "^!plugins? (-) ([%w_%.%-]+) (chat)",
-    "^!plugins? (reload)$" },
+    "^!plugins? (?)$" },
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true

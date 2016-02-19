@@ -14,7 +14,7 @@ end
 local function run(msg, matches)
     local receiver = get_receiver(msg)
 	if not is_momod(msg) then 
-		return "فقط برای مدیران!"
+		return "For moderators only !"
 	end
 	if matches[1] then
 		chat_info(receiver, tagall, {receiver = receiver,msg_text = matches[1]})
@@ -24,12 +24,12 @@ end
 
 
 return {
-  description = "صدا کردن افراد و نمایش یک پیام",
+  description = "Will tag all ppl with a msg.",
   usage = {
-    "تگ [msg]."
+    "/tagall [msg]."
   },
   patterns = {
-    "^تگ +(.+)$"
+    "^[!/]tagall +(.+)$"
   },
   run = run
 }
