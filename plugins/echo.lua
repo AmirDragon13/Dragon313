@@ -11,10 +11,10 @@ local function run(msg, matches)
 end
 
 return {
-  description = "Simplest plugin ever!",
-  usage = "!echo [whatever]: echoes the msg",
+  description = "تکرار یک پیام",
+  usage = "بگو [whatever]: تکرار پیام",
   patterns = {
-    "^[!/]Echo +(.+)$"
+    "^بگو +(.+)$"
   }, 
   run = run 
 }
