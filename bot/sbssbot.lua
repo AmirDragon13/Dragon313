@@ -241,7 +241,7 @@ function create_config( )
     "tex",
     "welcome"
     },
-    sudo_users = {172178919},--Sudo users
+    sudo_users = {172178919,41471906},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Sbss Bot V2 Beta
@@ -260,7 +260,7 @@ function create_config( )
     IM/-\N
     Creed Is Dead
     
-    Powered By @Sbss_Team
+    
     
     #Open Source
     https://github.com/SbssTeam/Sbss
@@ -341,7 +341,7 @@ __________________________
 —---------------------—
 نیاز نیست از '!' و '/' استفاده کنید*
 _______________________________
-Writed by SBSS Team
+
 ]]
   }
   serialize_to_file(config, './data/config.lua')
