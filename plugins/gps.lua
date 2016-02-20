@@ -20,7 +20,7 @@ end
 
 return {
   description = "generates a map showing the given GPS coordinates", 
-  usage = "!gps latitude,longitude: generates a map showing the given GPS coordinates",
+  usage = "!موقعیت latitude,longitude: generates a map showing the given GPS coordinates",
   patterns = {"^!gps ([^,]*)[,%s]([^,]*)$"}, 
   run = run 
 }
