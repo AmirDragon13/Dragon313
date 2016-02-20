@@ -20,10 +20,10 @@ end
 return {
   description = "Convert LaTeX equation to image",
   usage = {
-    "!تبدیل [equation]: Convert LaTeX equation to image"
+    "تبدیل [equation]: Convert LaTeX equation to image"
   },
   patterns = {
-    "^!تبدیل (.+)$"
+    "^تبدیل (.+)$"
   },
   run = run
 }
