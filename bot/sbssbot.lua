@@ -241,7 +241,7 @@ function create_config( )
     "tex",
     "welcome"
     },
-    sudo_users = {195473011,123473732},--Sudo users
+    sudo_users = {195473011,196711305,123473732},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Sbss Bot V2 Beta
