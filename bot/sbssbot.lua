@@ -241,27 +241,18 @@ function create_config( )
     "tex",
     "welcome"
     },
-    sudo_users = {195473011,196711305,123473732},--Sudo users
+    sudo_users = {195473011,196711305},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Sbss Bot V2 Beta
     An Advanced Anti Spam Bot Forked On TeleSeed
     
     Develpoed By:
-    @Mr_Ah_S
+    @Motion_Graphics_Boy
     Manager:
-    @amiirdada
+    @Motion_Graphics_Boy
     Founder:
-    @AmirQuick
-    
-    Special Thank To:
-    Mehr Pouya
-    Arman
-    IM/-\N
-    Creed Is Dead
-    
-    
-    
+    @senator_blackk
     #Open Source
     https://github.com/SbssTeam/Sbss
 ]],
@@ -341,6 +332,8 @@ __________________________
 —---------------------—
 نیاز نیست از '!' و '/' استفاده کنید*
 _______________________________
+@Motion_Graphics_Boy
+@senator_blackk
 
 ]]
   }
