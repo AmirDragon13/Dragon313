@@ -253,8 +253,6 @@ function create_config( )
     @Amir_Dragon_0rg
     Founder:
     @Amir_Dragon_0rg
-    #Open Source
-    https://github.com/SbssTeam/Sbss
 ]],
     help_text_realm = [[
 See Patterns In Github
